@@ -105,6 +105,28 @@ int main(){
         ptr = ptr->next;
 
     }
+    // New node at K-th position
+    cout<<"New Node at K-th position"<<endl;
+    node *new_node;
+    new_node = (struct node *)malloc(sizeof(node));
+    new_node->data = 6;
+    new_node->next = NULL;
+
+    ptr = start;
+    int k = 3;
+    for(int i=2; i<k; i++){
+        if(ptr->next != NULL){
+            ptr = ptr->next;
+        }
+    }
+    new_node->next = ptr->next;
+    ptr->next = new_node;
+
+    resetP;
+    while(ptr != NULL){
+        cout<<ptr->data<<endl;
+        ptr = ptr->next;
+    }
 
     return 0;
 }
