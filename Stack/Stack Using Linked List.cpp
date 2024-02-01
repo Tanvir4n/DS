@@ -56,7 +56,7 @@ int main(){
     printStack();
 
     pop();
-    cout << "After the pop, the new stack" << endl;
+    cout<<"After the pop, the new stack"<<endl;
     printStack();
 
     pop();
